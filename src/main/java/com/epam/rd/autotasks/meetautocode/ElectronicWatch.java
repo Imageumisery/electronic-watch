@@ -18,6 +18,6 @@ public class ElectronicWatch {
        float f = d % 60;
        int g = (int) f;
 
-       System.out.printf("%02d:%02d:%02d\n", b, c, g);
+       System.out.printf("%01d:%02d:%02d\n", b, c, g);
     }
 }
