@@ -22,8 +22,12 @@ public class ElectronicWatch {
                 System.out.println(b + ":"+ c + ":" + g);
                 break;
             }
-            while (a >= 86400){
+            while (a == 86400){
                 System.out.println("00:00:00");
+                break;
+            }
+            while (a > 86400) {
+                System.out.println();
                 break;
             }
             break;
