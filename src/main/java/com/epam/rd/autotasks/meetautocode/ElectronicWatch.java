@@ -11,26 +11,13 @@ public class ElectronicWatch {
     }
 
    public static void measureTime (int a) {
-        int b = a / 3600;
-        float d = (a % 3600);
+       a = a % 86400;
+       int b = a / 3600;
+       float d = (a % 3600);
        int c = (int) (d / 60);
-        float f = d % 60;
-        int g = (int) f;
+       float f = d % 60;
+       int g = (int) f;
 
-        while (a > 0 && a !=0) {
-            while (d !=0) {
-                System.out.println(b + ":"+ c + ":" + g);
-                break;
-            }
-            while (a == 86400){
-                System.out.println("00:00:00");
-                break;
-            }
-            while (a > 86400) {
-                System.out.println();
-                break;
-            }
-            break;
-        }
+       System.out.printf("%02d:%02d:%02d\n", b, c, g);
     }
 }
